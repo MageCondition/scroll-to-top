@@ -1,0 +1,14 @@
+<?php
+
+declare(strict_types=1);
+
+use Magento\Backend\Block\Template;
+
+/** @var Template $block */
+
+$config = $block->getViewModel()->getConfigJson();
+?>
+
+<div id="scroll-to-top" class="to-top" data-mage-init='{"scrollToTop": <?= $config ?>}'>
+    <div class="arrow"></div>
+</div>

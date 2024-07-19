@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <scroll_to_top>
+            <general>
+                <enable>0</enable>
+                <icon_color>#ffffff</icon_color>
+                <background_color>#26a9e0</background_color>
+            </general>
+            <advanced>
+                <position>right</position>
+                <button_type>round</button_type>
+                <breakpoint>200</breakpoint>
+                <side_margin>30</side_margin>
+                <bottom_margin>30</bottom_margin>
+            </advanced>
+        </scroll_to_top>
+    </default>
+</config>

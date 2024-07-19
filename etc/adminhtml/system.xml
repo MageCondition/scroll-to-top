@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="scroll_to_top" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Scroll To Top</label>
+            <tab>magecondition</tab>
+            <resource>MageCondition_ScrollToTop::scroll_to_top</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="icon_color" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Icon Color (hex)</label>
+                    <frontend_model>MageCondition\ScrollToTop\Block\Adminhtml\System\Config\Form\Field\ColorPicker</frontend_model>
+                </field>
+                <field id="background_color" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background Color (hex)</label>
+                    <frontend_model>MageCondition\ScrollToTop\Block\Adminhtml\System\Config\Form\Field\ColorPicker</frontend_model>
+                </field>
+            </group>
+            <group id="advanced" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Advanced Configuration</label>
+                <field id="position" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Position</label>
+                    <source_model>MageCondition\ScrollToTop\Model\Config\Source\Position</source_model>
+                </field>
+                <field id="button_type" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Button Type</label>
+                    <source_model>MageCondition\ScrollToTop\Model\Config\Source\ButtonType</source_model>
+                </field>
+                <field id="breakpoint" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Breakpoint</label>
+                    <comment>Set the breakpoint for the scroll to top button to appear</comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                </field>
+                <field id="side_margin" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Side Margin</label>
+                    <comment>Set the side margin for the button</comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                </field>
+                <field id="bottom_margin" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Bottom Margin</label>
+                    <comment>Set the bottom margin for the button</comment>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
