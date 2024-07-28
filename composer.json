@@ -1,20 +1,23 @@
 {
     "name": "mage-condition/scroll-to-top",
-    "description": "Module add scroll to top button for all pages on frontend",
+    "description": "Magento 2. Scroll to top button extension",
     "minimum-stability": "stable",
     "require": {
-        "mage-condition/core": "^1.0.0",
+        "mage-condition/core": "^1.0.1",
         "php": "^8.0"
     },
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Oleksandr",
             "email": "wincondition2911@gmail.com"
         }
     ],
-    "license": "MIT",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "autoload": {
         "files": [
             "registration.php"
