@@ -1,7 +1,7 @@
 # Magento 2 Scroll To Top Extension
 
 ![Magento 2](https://img.shields.io/badge/Magento-2-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-OSL-blue.svg)
 
 ## Overview
 
